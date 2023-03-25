@@ -2,7 +2,7 @@
 
 This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository, you will find solutions to all the problems that usually arise when installing this package, as well as a customization guide.
 
-  ![Alt text](/images/Workstation.png "Path")
+  ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
 
 
 # Download:
