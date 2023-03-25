@@ -2,7 +2,7 @@
 
 This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository, you will find solutions to all the problems that usually arise when installing this package, as well as a customization guide.
 
-  ![Alt text](/images/Workstation.png "Path")
+  ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
 
 
 # Download:
@@ -17,7 +17,7 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
 
 - Install Sumatra first and then MiKTeX and then ImageMagick. Finally install Sublime Text. Make sure that ImageMagick is added to the Windows Path during installation. The option should be checked during installation. Additionally, SumatraPDF must also be added to the Path. However, you must do this manually by finding the installation folder of SumatraPDF and adding it to the Path.
   
-  ![Alt text](/images/Path.png "Path")
+  ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Path.png)
 
 
 # Sublime Configs
@@ -172,11 +172,11 @@ To compile the project, you need to do it from the main file of the project (for
 
 For example: This proyect
 
-![Alt text](/images/Project.png "Path")
+![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Project.png)
 
 If you're working on the 2.5.tex file and want to compile the entire project from there, you need to add %!TEX root = main.tex to the first line, as shown below:
 
-![Alt text](/images/example.png "Path")
+![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Example.png)
 
 The first line of code doesn't affect our project as it is a comment. What it does is tell LatexTools to compile the main.tex file instead of the 2.5.tex file. If your main file isn't named main, you can edit the line of code with the name of your file.
 
