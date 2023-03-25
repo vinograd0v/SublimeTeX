@@ -19,6 +19,27 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
   
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Path.png)
 
+ If you don't see ImageMagick in the Windows Path, add it manually by copying the path and pasting it, just like with Sumatra.
+
+  Before we proceed, it may be necessary to install some LaTeX packages from MiKTeX. To do this, we need to open the MiKTeX console.
+
+  * Go to Packages and install "preview" and "mathtools" as below:
+  
+   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Miktex.png)
+
+   * You should type the names of the packages in the selected part.
+   * Now install:
+
+ ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Preview.png)
+
+ Once both packages are installed, proceed with the installation, remember that in the future compiling one of your projects may require a package that you may have to install from this console.
+
+
+
+
+
+ 
+
 
 # Sublime Configs
 
@@ -62,7 +83,7 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
   }
   ```
 
-- Save the file. This will automatically install all the packages necessary for the setup.  Wait for 5-10 mins for the installation to complete.
+- Save the file. This will automatically install all the packages necessary for the setup.  Wait for 5-10 mins for the installation to complete (be sure the installation complete).
 
 - Next open `Preferences  → Settings`  and paste the following there.
 
@@ -159,6 +180,7 @@ FixedPageUI [
 The color i'm using is for Ayu-Dark.
 
 # Build
+
 
 To build your LaTeX project, press `Ctrl+Shift+B` and select PDFLaTeX or LuaLaTeX or XeLaTeX depending on which compiler your project requires.
 
