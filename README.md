@@ -231,6 +231,44 @@ if is_prefixed:
 
 Deleting or commenting out these lines of code will solve all the problems.
 
+## Biblatex:
+
+There is an issue that occurs when using biblatex and not making any citation in the entire document, basically it does not print the bibliography and the "\nocite{*}" command does not work. Once we make at least one citation in the entire document, the "\nocite{ * }" command works and the problem is fixed. However, if we do not want to make any citation in the entire document, a quick solution for this is to make a phantom citation, that is, one that does not affect the final document but solves the problem. To do this, we implement the following in our .tex file:
+
+```tex
+\newcommand{\phantomcite}[1]{
+    \phantom{\cite{#1}}
+    \nocite{*}
+}
+```
+
+So at the end of our document, before using "\printbibliography", we put the command "\phantomcite{"here put any citation from your references"}" and that will solve the problem. This command executes a phantom citation and is followed by the "\nocite{*}" command, so it will no longer be necessary to use it.
+
+* Example:
+  
+```tex
+\documentclass{article}
+
+\usepackage{biblatex}
+
+\newcommand{\phantomcite}[1]{
+    \phantom{\cite{#1}}
+    \nocite{*}
+}
+
+
+\addbibresource{sample.bib}
+
+\begin{document}
+
+Test. 
+
+\phantomcite{dirac}
+
+\printbibliography
+\end{document}
+```
+
 # Spanish
 
 To add the Spanish language to Sublime Text and the spell checker, you need to download the "Language - Spanish" folder from the repository and put it in the folder that opens when you run "Browse Packages". Once the language folder is located there, go to Sublime Text `View -> Dictionary -> Language - Spanish -> Spanish`. When you select this, Sublime Text will implement Spanish language correction.
