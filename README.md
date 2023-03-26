@@ -34,12 +34,9 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
 
  Once both packages are installed, proceed with the installation, remember that in the future compiling one of your projects may require a package that you may have to install from this console.
 
+Also, it may be recommended to enable automatic package installation: Go to Setting
 
-
-
-
- 
-
+ ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Conf.png)
 
 # Sublime Configs
 
@@ -183,6 +180,10 @@ The color i'm using is for Ayu-Dark.
 
 
 To build your LaTeX project, press `Ctrl+Shift+B` and select PDFLaTeX or LuaLaTeX or XeLaTeX depending on which compiler your project requires.
+
+ ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Compilers.png)
+
+ If you don't use those you can maybe have problems with biblatex.
 
 After the first compilation, you should be able to compile simply by using `Ctrl+B`
 
