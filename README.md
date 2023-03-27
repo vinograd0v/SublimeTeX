@@ -1,9 +1,6 @@
 # SublimeTeX
 
 ![GitHub all releases](https://img.shields.io/github/downloads/mmanosalva/SublimeTeX/total)
-
-
-
 ![GitHub contributors](https://img.shields.io/github/contributors/mmanosalva/SublimeTeX)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/mmanosalva/SublimeTeX)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mmanosalva/SublimeTeX)
