@@ -2,7 +2,7 @@
 
 ![GitHub all releases](https://img.shields.io/github/downloads/mmanosalva/SublimeTeX/total)
 
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/MShawon/cf89f3274d06170b8a4973039aa6220a/raw/clone.json&logo=github)](https://github.com/mmanosalva/SublimeTeX)
+[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/mmanosalva/cf89f3274d06170b8a4973039aa6220a/raw/clone.json&logo=github)](https://github.com/mmanosalva/SublimeTeX)
 
 
 ![GitHub contributors](https://img.shields.io/github/contributors/mmanosalva/SublimeTeX)
