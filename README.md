@@ -193,7 +193,7 @@ To compile the project, you need to do it from the main file of the project (for
 %!TEX root = main.tex
 ```
 
-For example: This proyect
+For example: This project
 
 ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Project.png)
 
@@ -269,11 +269,58 @@ Test.
 \end{document}
 ```
 
+Another way to fix the problem is before using "\nocite{*}" put "nocite{"some of your reference"}":
+
+```tex
+\documentclass{article}
+
+\usepackage{biblatex}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+
+Test. 
+
+\nocite{dirac}
+\nocite{*}
+
+\printbibliography
+\end{document}
+```
+
+As mentioned earlier, the problem is related to "\nocite{*}". In this solution, it is not necessary to add the "\phantomcite" from the previous solution.
+
+* IMPORTANT: If you compile your project and it generates the bibliography and you make changes to it, you may need to delete the generated files and compile again. Otherwise, the bibliography may not change. The corresponding file is the one with the extension .bbl in our files folder.
+
+
+
 # Spanish
 
 To add the Spanish language to Sublime Text and the spell checker, you need to download the "Language - Spanish" folder from the repository and put it in the folder that opens when you run "Browse Packages". Once the language folder is located there, go to Sublime Text `View -> Dictionary -> Language - Spanish -> Spanish`. When you select this, Sublime Text will implement Spanish language correction.
 
 The procedure is similar for autocorrection in English, however, you will need to search for the dictionaries as I do not have them available.
+
+# ImageMagick Preview:
+
+With this project you will be able to see your equations without compile:
+
+![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Previeww.png)
+
+If you see the resolution of the preview is too low go to: `Preferences -> Package Settings -> LaTeXTools-> Settings-User` and then search for the line "preview_math_density", you can change values and prove some resolutions and pixeles density if you want, this is my config for my screen (2160x1440p):
+
+```json
+	// The density of the preview image. The higher the density the bigger the phantom.
+	"preview_math_density": 300,
+	// If the image is not sharp enough increase this scale to get a better resolution.
+	// However also change the density by the same factor to keep the size.
+	"preview_math_scale_quotient": 3,
+	// If this is true, the image will be rendered at a higher resolution and
+	// then scaled down. This generally results in a clearer image.
+	"preview_math_hires": true,
+```
+
+
 
 # Contact
 
