@@ -1,6 +1,7 @@
 # SublimeTeX
 
 ![GitHub all releases](https://img.shields.io/github/downloads/mmanosalva/SublimeTeX/total)
+![GitHub repo clones](https://img.shields.io/github/clones/ejemplo/proyecto.svg?style=flat-square&color=blue&label=Clones)
 ![GitHub contributors](https://img.shields.io/github/contributors/mmanosalva/SublimeTeX)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/mmanosalva/SublimeTeX)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mmanosalva/SublimeTeX)
