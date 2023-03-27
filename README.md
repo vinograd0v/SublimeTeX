@@ -2,6 +2,7 @@
 
 ![GitHub all releases](https://img.shields.io/github/downloads/mmanosalva/SublimeTeX/total)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mmanosalva/SublimeTeX)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/mmanosalva/SublimeTeX)
 ![GitHub](https://img.shields.io/github/license/mmanosalva/SublimeTeX)
 
 This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository, you will find solutions to all the problems that usually arise when installing this package, as well as a customization guide.
