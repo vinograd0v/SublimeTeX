@@ -44,6 +44,8 @@ Also, it may be recommended to enable automatic package installation: Go to Sett
 
  ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Conf.png)
 
+Now i'm using that Repository, its working good for me so you can try to use it going to change and selecting it, but if one day you have problems with the repository you can change it, i had problems using the default repository (SSL issue code), thats why i change mine.
+
 # Sublime Configs
 
 - Open the Command Palette : Press `Ctrl+Shift+P`
