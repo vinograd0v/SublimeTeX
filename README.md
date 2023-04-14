@@ -337,9 +337,33 @@ The purpose of this work is to save as much time as possible when working with L
 
 To install these snippets, you need to download the "SublimeTeX" folder from the repository and paste it into the LatexTools folder that you can access from "Browse Packages", as we have been doing. After this, you are ready to use them, so I will leave some gifs of some of them so that you can appreciate their usefulness and how to use them, followed by a list of commands to use them. To use the snippets you have to write the snippet name and push tab.
 
-* plots: 
+* plot: 
 
 ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/plot.gif)
+
+* template:
+
+![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/template.gif)
+
+* matriz:(this snippet works for 2x2,3x3,...9x9, if you want a matriz just use pmat)
+
+![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/matriz.gif)
+
+* some:
+
+![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/some.gif)
+
+* preview:
+
+![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/preview.gif)
+
+REMEMBER: TO USE THE SNIPPETS YOU JUST HAVE TO KNOW THEIR NAMES, WRITE THEM AND PUSH TAB.
+
+There are a lot of snippets and i will upload more, here you will find a list with all their names in the file "snippets.md"
+
+
+
+
 
 
 
