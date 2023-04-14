@@ -6,9 +6,14 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/mmanosalva/SublimeTeX)
 ![GitHub](https://img.shields.io/github/license/mmanosalva/SublimeTeX)
 
-This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository, you will find solutions to all the problems that usually arise when installing this package, as well as a customization guide.
+This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository, you will find solutions to all the problems that usually arise when installing this package, as well as a customization guide and now we have SNIPPETS:
+
+  ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/template.gif)
+
 
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
+
+
 
 
 # Download:
@@ -361,12 +366,7 @@ REMEMBER: TO USE THE SNIPPETS YOU JUST HAVE TO KNOW THEIR NAMES, WRITE THEM AND 
 
 There are a lot of snippets and i will upload more, here you will find a list with all their names in the file "snippets.md"
 
-
-
-
-
-
-
+What I recommend is to use all of them to understand well what they do, and then decide which ones are useful for you. If you can, please suggest some of them.
 
 # Contact
 
