@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\begin{align*}
+	${1:function name} : ${2:domain} &\longrightarrow ${3:codomain} \\\\
+	${4:input} &\longmapsto ${1}(${4}) = ${5:output}
+\end{align*}
+	]]></content>
+	<tabTrigger>bigfun</tabTrigger>
+	<description>Big function</description>
+</snippet>

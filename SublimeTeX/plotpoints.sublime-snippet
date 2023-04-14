@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+\begin{figure}[${1}]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xmin=${2:-10}, xmax=${3:10},
+            ymin=${4:-10}, ymax=${5:10},
+            axis lines=middle,
+            width=${6:10cm},
+            height=${7:8cm}
+        ]
+            \addplot[only marks] coordinates {${8:%add your point here (a,b)(c,d)...%}};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{${9}}
+    \label{}
+\end{figure}
+]]></content>
+    <tabTrigger>plotpoints</tabTrigger>
+    <scope>text.tex.latex</scope>
+    <description>Plot</description>
+</snippet>

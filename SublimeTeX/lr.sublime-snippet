@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+\left( ${1:${VISUAL}} \right)
+]]></content>
+    <tabTrigger>lr(</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>

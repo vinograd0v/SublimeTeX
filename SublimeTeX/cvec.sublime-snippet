@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+\begin{pmatrix}
+${1:x}_${2:1} \\\\
+\vdots \\\\
+${1}_${2:n}
+\end{pmatrix}
+	]]></content>
+	<tabTrigger>cvec</tabTrigger>
+	<description>Column vector</description>
+</snippet>

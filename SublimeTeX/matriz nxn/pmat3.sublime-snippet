@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+\begin{pmatrix}
+${1:a11} & ${2:a12} & ${3:a13} \\\
+${4:a21} & ${5:a22} & ${6:a23} \\\
+${7:a31} & ${8:a32} & ${9:a33} \\\
+\end{pmatrix}
+]]></content>
+    <tabTrigger>pmat3</tabTrigger>
+    <scope>text.tex.latex</scope>
+</snippet>

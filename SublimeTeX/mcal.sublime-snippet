@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+\mathcal{${1:ABC}}${0}
+]]></content>
+    <tabTrigger>mcal</tabTrigger>
+    <scope>text.tex.latex</scope>
+</snippet>

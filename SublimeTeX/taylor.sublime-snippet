@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+\sum_{${1:k}=${2:0}}^{${3:\infty}} ${4:c_$1} (x-a)^$1 ${0}
+]]></content>
+    <tabTrigger>taylor</tabTrigger>
+    <scope>text.tex.latex</scope>
+</snippet>
+
+
+
+
+
+
+
+
+
+
+

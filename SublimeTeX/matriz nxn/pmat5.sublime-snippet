@@ -1,0 +1,13 @@
+    <snippet>
+    <content><![CDATA[
+\begin{pmatrix}
+    ${1:a11} & ${2:a12} & ${3:a13} & ${4:a14} & ${5:a15} \\\
+    ${6:a21} & ${7:a22} & ${8:a23} & ${9:a24} & ${10:a25} \\\
+    ${11:a31} & ${12:a32} & ${13:a33} & ${14:a34} & ${15:a35} \\\
+    ${16:a41} & ${17:a42} & ${18:a43} & ${19:a44} & ${20:a45} \\\
+    ${21:a51} & ${22:a52} & ${23:a53} & ${24:a54} & ${25:a55} \\\
+\end{pmatrix}
+]]></content>
+    <tabTrigger>pmat5</tabTrigger>
+    <scope>text.tex.latex</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\overline{${1:text}}$0
+	]]></content>
+	<tabTrigger>bar</tabTrigger>
+	<description>Bar</description>
+	<scope>text.tex.latex</scope>
+</snippet>

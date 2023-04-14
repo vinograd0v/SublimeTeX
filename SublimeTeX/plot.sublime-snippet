@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+\begin{figure}[${1}]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xmin=${2:-10}, xmax=${3:10},
+            ymin=${4:-10}, ymax=${5:10},
+            axis lines=middle,
+            width=${6:10cm},
+            height=${7:8cm}
+        ]
+            \addplot[domain=${8:-10}:${9:10}, samples=${10:100}] {${11}};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{${12}}
+    \label{}
+\end{figure}
+]]></content>
+    <tabTrigger>plot</tabTrigger>
+    <scope>text.tex.latex</scope>
+    <description>Plot</description>
+</snippet>

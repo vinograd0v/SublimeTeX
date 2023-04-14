@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+\neq 
+]]></content>
+    <tabTrigger>!=</tabTrigger>
+    <scope>text.tex.latex</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\|${1:text}\|$0
+	]]></content>
+	<tabTrigger>norm</tabTrigger>
+	<description>Norm</description>
+	<scope>text.tex.latex</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\cdot 
+	]]></content>
+	<tabTrigger>**</tabTrigger>
+	<description>cdot</description>
+	<scope>text.tex.latex</scope>
+</snippet>
