@@ -339,7 +339,7 @@ To install these snippets, you need to download the "SublimeTeX" folder from the
 
 * plots: 
 
-![](https://github.com/mmanosalva/SublimeTeX/SublimeTeX/plots.gif)
+![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/plot.gif)
 
 
 
