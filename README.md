@@ -329,6 +329,20 @@ If you see the resolution of the preview is too low go to: `Preferences -> Packa
 ```
 
 
+# Snippets
+
+The following work is inspired by that of Gilles Castel (casteldev), many of these snippets are adaptations and improvements of his wonderful work in LaTeX in Vim.
+
+The purpose of this work is to save as much time as possible when working with LaTeX, but also to help those who are not very proficient in it, especially with libraries such as TikZ, PSTricks, etc. Over time, and especially with your help, I hope that these snippets will improve. All kinds of suggestions or collaborations are welcome.
+
+To install these snippets, you need to download the "SublimeTeX" folder from the repository and paste it into the LatexTools folder that you can access from "Browse Packages", as we have been doing. After this, you are ready to use them, so I will leave some gifs of some of them so that you can appreciate their usefulness and how to use them, followed by a list of commands to use them. To use the snippets you have to write the snippet name and push tab.
+
+* plots: 
+
+![](https://github.com/mmanosalva/SublimeTeX/SublimeTeX/plots.gif)
+
+
+
 
 # Contact
 
