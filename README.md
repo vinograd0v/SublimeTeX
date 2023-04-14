@@ -354,7 +354,7 @@ To install these snippets, you need to download the "SublimeTeX" folder from the
 
 ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/matriz.gif)
 
-* some:
+* some snippets:
 
 ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/some.gif)
 
