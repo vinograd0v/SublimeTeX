@@ -11,12 +11,12 @@
 This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository, you will find solutions to all the problems that usually arise when installing this package, as well as a customization guide and now we have SNIPPETS:
 
  # Result
- 
-  ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/template.gif)
 
 
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
+## Snippet example:
 
+  ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/template.gif)
 
 
 # Instructions
