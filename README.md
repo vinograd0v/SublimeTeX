@@ -10,6 +10,8 @@
 
 This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository, you will find solutions to all the problems that usually arise when installing this package, as well as a customization guide and now we have SNIPPETS:
 
+ # Result
+ 
   ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/template.gif)
 
 
@@ -17,6 +19,7 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
 
 
 
+# Instructions
 
 <details>
   <summary style="font-size: 1.2em; font-weight: bold;">Download</summary>
