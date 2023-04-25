@@ -17,7 +17,7 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
 
 
 <details>
-<summary>Download</summary>
+<summary># Download</summary>
 
 
 - [Sublime text here.]( https://www.sublimetext.com/)
