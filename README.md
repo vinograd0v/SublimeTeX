@@ -15,15 +15,17 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
 
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
 
+
+
+
 <details>
-  <summary><h2 style="display: inline-block">Download</h2></summary>
+  <summary style="font-size: 1.2em; font-weight: bold;">Download</summary>
+  
   
  - [Sublime text here.]( https://www.sublimetext.com/)
 - [MiKTeX here.](https://miktex.org/download)
 - [Sumatra PDF here.](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
-- [ImageMagick here.](https://imagemagick.org/script/download.php#windows)
-
-  
+- [ImageMagick here.](https://imagemagick.org/script/download.php#windows)  
 </details>
 
 
@@ -31,10 +33,9 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
 
 
 
-
-
-# Install
-
+<details>
+  <summary style="font-size: 1.2em; font-weight: bold;">Install</summary>
+  
 - Install Sumatra first and then MiKTeX and then ImageMagick. Finally install Sublime Text. Make sure that ImageMagick is added to the Windows Path during installation. The option should be checked during installation. Additionally, SumatraPDF must also be added to the Path. However, you must do this manually by finding the installation folder of SumatraPDF and adding it to the Path.
   
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Path.png)
@@ -58,10 +59,14 @@ Also, it may be recommended to enable automatic package installation: Go to Sett
 
  ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Conf.png)
 
-Now i'm using that Repository, its working good for me so you can try to use it going to change and selecting it, but if one day you have problems with the repository you can change it, i had problems using the default repository (SSL issue code), thats why i change mine.
+Now i'm using that Repository, its working good for me so you can try to use it going to change and selecting it, but if one day you have problems with the repository you can change it, i had problems using the default repository (SSL issue code), thats why i change mine.  
+</details>
 
-# Sublime Configs
 
+
+<details>
+  <summary style="font-size: 1.2em; font-weight: bold;">Sublime Configs</summary>
+  
 - Open the Command Palette : Press `Ctrl+Shift+P`
 
 - Type ‘install’ in the Command Palette input box, which should autocomplete to ‘Install Package Control.’ Press Enter to select it.
@@ -157,9 +162,14 @@ Now i'm using that Repository, its working good for me so you can try to use it 
   ```
 
 - Now finally go to `Preferences→Package settings→Latex tools→Check system` to check whether everything is fine or not.
+  
+</details>
 
-# Dark Mode
 
+
+<details>
+  <summary style="font-size: 1.2em; font-weight: bold;">Dark Mode</summary>
+  
 In Sumatra PDF go to `Settings→Advanced Options`. The settings will open in a new text document. Change the `MainWindowBackground = #11141b` and replace the code in `FixedPageUI` with the following
 
 ```
@@ -197,10 +207,16 @@ FixedPageUI [
  Noticed that by changing the Backgroundcolor and MainWindowBackground lines in the Sumatra configuration, we can make our PDF appear in any color we want. If we want to customize Sumatra to match the colors of our Sublime theme, we just need to know the Hex code of the color associated with the theme (i.e. the background color of Sublime). To do this, we can take a screenshot of an area of the screen where the color we want to use is visible, save the image, and use a tool that detects the color in the image ([You can use this](https://imagecolorpicker.com/)).
 
 The color i'm using is for Ayu-Dark.
+  
+</details>
+
 
 # Build
 
 
+<details>
+  <summary style="font-size: 1.2em; font-weight: bold;">Build</summary>
+  
 To build your LaTeX project, press `Ctrl+Shift+B` and select PDFLaTeX or LuaLaTeX or XeLaTeX depending on which compiler your project requires.
 
  ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Compilers.png)
@@ -223,10 +239,15 @@ If you're working on the 2.5.tex file and want to compile the entire project fro
 
 ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Example.png)
 
-The first line of code doesn't affect our project as it is a comment. What it does is tell LatexTools to compile the main.tex file instead of the 2.5.tex file. If your main file isn't named main, you can edit the line of code with the name of your file.
+The first line of code doesn't affect our project as it is a comment. What it does is tell LatexTools to compile the main.tex file instead of the 2.5.tex file. If your main file isn't named main, you can edit the line of code with the name of your file.  
+</details>
 
-# Some issues
 
+
+
+<details>
+  <summary style="font-size: 1.2em; font-weight: bold;">Some issues</summary>
+  
 When you start using the interface, you'll notice that when you compile a document, a new Sublime Text window opens. This can be quite annoying, and there may be errors such as auto-completion failures and deleted characters. Here, we will provide solutions to these issues.
 
 * Go to `Preferences -> Package Settings -> LaTeXTools-> Settings-User` and in the line:
@@ -316,12 +337,20 @@ As mentioned earlier, the problem is related to "\nocite{*}". In this solution, 
 * IMPORTANT: If you compile your project and it generates the bibliography and you make changes to it, you may need to delete the generated files and compile again. Otherwise, the bibliography may not change. The corresponding file is the one with the extension .bbl in our files folder.
 
 
+  
+</details>
 
-# Spanish
 
+<details>
+  <summary style="font-size: 1.2em; font-weight: bold;">Spanish config</summary>
+  
 To add the Spanish language to Sublime Text and the spell checker, you need to download the "Language - Spanish" folder from the repository and put it in the folder that opens when you run "Browse Packages". Once the language folder is located there, go to Sublime Text `View -> Dictionary -> Language - Spanish -> Spanish`. When you select this, Sublime Text will implement Spanish language correction.
 
 The procedure is similar for autocorrection in English, however, you will need to search for the dictionaries as I do not have them available.
+	
+</details>
+
+
 
 # ImageMagick Preview:
 
