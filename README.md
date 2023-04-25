@@ -16,14 +16,22 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
 
 
+<details>
+<summary>Download</summary>
 
-
-# Download:
 
 - [Sublime text here.]( https://www.sublimetext.com/)
 - [MiKTeX here.](https://miktex.org/download)
 - [Sumatra PDF here.](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
 - [ImageMagick here.](https://imagemagick.org/script/download.php#windows)
+
+
+
+</details>
+
+
+
+
 
 
 # Install
