@@ -21,8 +21,8 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
 
 # Instructions
 
-<details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Download</summary>
+<details> 
+  <summary style="font-size: 2.5em; font-weight: bold;">Download</summary>
   
   
  - [Sublime text here.]( https://www.sublimetext.com/)
@@ -37,7 +37,7 @@ This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository
 
 
 <details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Install</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Install</summary>
   
 - Install Sumatra first and then MiKTeX and then ImageMagick. Finally install Sublime Text. Make sure that ImageMagick is added to the Windows Path during installation. The option should be checked during installation. Additionally, SumatraPDF must also be added to the Path. However, you must do this manually by finding the installation folder of SumatraPDF and adding it to the Path.
   
@@ -68,7 +68,7 @@ Now i'm using that Repository, its working good for me so you can try to use it 
 
 
 <details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Sublime Configs</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Sublime Configs</summary>
   
 - Open the Command Palette : Press `Ctrl+Shift+P`
 
@@ -171,7 +171,7 @@ Now i'm using that Repository, its working good for me so you can try to use it 
 
 
 <details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Dark Mode</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Dark Mode</summary>
   
 In Sumatra PDF go to `Settings→Advanced Options`. The settings will open in a new text document. Change the `MainWindowBackground = #11141b` and replace the code in `FixedPageUI` with the following
 
@@ -218,7 +218,7 @@ The color i'm using is for Ayu-Dark.
 
 
 <details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Build</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Build</summary>
   
 To build your LaTeX project, press `Ctrl+Shift+B` and select PDFLaTeX or LuaLaTeX or XeLaTeX depending on which compiler your project requires.
 
@@ -249,7 +249,7 @@ The first line of code doesn't affect our project as it is a comment. What it do
 
 
 <details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Some issues</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Some issues</summary>
   
 When you start using the interface, you'll notice that when you compile a document, a new Sublime Text window opens. This can be quite annoying, and there may be errors such as auto-completion failures and deleted characters. Here, we will provide solutions to these issues.
 
@@ -345,7 +345,7 @@ As mentioned earlier, the problem is related to "\nocite{*}". In this solution, 
 
 
 <details>
-  <summary style="font-size: 1.2em; font-weight: bold;">Spanish config</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Spanish config</summary>
   
 To add the Spanish language to Sublime Text and the spell checker, you need to download the "Language - Spanish" folder from the repository and put it in the folder that opens when you run "Browse Packages". Once the language folder is located there, go to Sublime Text `View -> Dictionary -> Language - Spanish -> Spanish`. When you select this, Sublime Text will implement Spanish language correction.
 
