@@ -2,6 +2,6 @@
     <content><![CDATA[
 \displaystyle
 ]]></content>
-    <tabTrigger>disp</tabTrigger>
+    <tabTrigger>dp</tabTrigger>
     <scope>text.tex.latex</scope>
 </snippet>

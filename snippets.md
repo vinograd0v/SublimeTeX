@@ -6,13 +6,13 @@
 * "**"  (cdot)
 * ceil  (ceil)
 * cvec  (column vector)
-* disp  (displaystyle)
+* dp  (displaystyle)
 * floor (floor)
 * //    (fraction)
 * lim   (limit)
 * liminf    (\limitinf)
 * limsup    (\limsup)
-* lr(      (\left(\right)) i hate to do that manually
+* lr      (\left(\right)) i hate to do that manually
 * mcal  (\mathcal)
 * ||    (\mid)
 * !=    (\neq)
