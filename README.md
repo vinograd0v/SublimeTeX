@@ -6,76 +6,73 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/mmanosalva/SublimeTeX)
 ![GitHub](https://img.shields.io/github/license/mmanosalva/SublimeTeX)
 
+Desde hace un tiempo Overleaf viene aplicando varios cambios en la plataforma, primero restringieron la cantidad de editores por proyecto, luego cambiaron el tiempo de compilado del plan gratuito y a la fecha del 25 de agosto de 2025 van a aplicar aún más restricciones sobre el tiempo de compilado. Esto hace que tener una  manera de trabajar LaTeX localmente sea muy necesaria, de hecho, es impresindible para proyectos grandes como hacer una tesis grado o un proyecto para una materia o personal.
 
-This is a LaTeX setup guide for Sublime Text with LaTeXTools. In this repository, you will find solutions to all the problems that usually arise when installing this package, as well as a customization guide and now we have SNIPPETS:
+En esta guía vamos a mostrar la forma de hacer esto con SublimeText (latextools) y MikTeX, para los usuarios de Linux también hay una breve guía al final, sin embargo los pasos a seguir son exactamente los mismos que en Windows, salvo la instalación de TeX y los paquetes adicionales, la principal diferencia será que en Linux usaremos TexLive. Para este caso lo haré desde mi sistema operativo de uso personal (Archlinux), sin embargo es totalmente replicable en cualquier distribución y una vez instalados los paquetes podemos configurar todo siguiendo los mismos pasos que en Windows.
 
- # Result
+¿Por qué SublimeText?, sí, es un Software de paga y sé que a los usuarios de Linux esto no les gusta mucho, pero Sublime  nos permite tener un intermedio entre lo velozmente complidado (Vim, Neovim, Emacs ...) y lo fácil, pero absurdamente lento (VScode). Personalmente VScode no me gusta ya que no solo es más lento sino que no lo veo tan bien adaptado y personalizable, estéticamente Sublime nos da un mucho mejor resultado (al menos en mi opinión) y no necesariamente debemos pagar para usarlo, está disponible de manera gratuita.
 
+Finalmente, en este repositorio encuentras snippets, piezas de código que permiten decirle a Sublime qué queremos que haga cuando escribimos un comando particular en nuestro documento, por ejemplo, si quiero hacer una matriz de 8x8, sería muy extenso tener que hacerlo a mano, en cambio, estos snippets nos permiten ahorrar mucho tiempo de escritura ya que hacen esto de forma automática, a lo largo de la guía hay varios ejemplos de su uso y en la carpeta SublimeTeX se encuentran todos ellos y son totalmente configurables a tu gusto.
+
+ # Resultado
 
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
-## Snippet example:
+## Snippets:
 
   ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/template.gif)
 
 
-# Instructions
+# Instrucciones
 
 <details> 
   <summary style="font-size: 2.5em; font-weight: bold;">Download</summary>
   
-  
+
  - [Sublime text here.]( https://www.sublimetext.com/)
 - [MiKTeX here.](https://miktex.org/download)
 - [Sumatra PDF here.](https://www.sumatrapdfreader.org/download-free-pdf-viewer)
 - [ImageMagick here.](https://imagemagick.org/script/download.php#windows)  
 </details>
 
-
-
-
-
-
 <details>
   <summary style="font-size: 2.5em; font-weight: bold;">Install</summary>
   
-- Install Sumatra first and then MiKTeX and then ImageMagick. Finally install Sublime Text. Make sure that ImageMagick is added to the Windows Path during installation. The option should be checked during installation. Additionally, SumatraPDF must also be added to the Path. However, you must do this manually by finding the installation folder of SumatraPDF and adding it to the Path.
+- Instala primero Sumatra, luego MiKTeX y después ImageMagick. Finalmente, instala Sublime Text.
+Asegúrate de que ImageMagick se agregue al Path de Windows durante la instalación. La opción debe estar marcada durante la instalación. Si alguna no se añadió debes hacerlo manual, hay muchos videos sobre cómo añadir software a las variables de entorno de Windows, esto se hace para que al compilar se abra automáticamente Sumatra y nos muestre el PDF
   
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Path.png)
 
- If you don't see ImageMagick in the Windows Path, add it manually by copying the path and pasting it, just like with Sumatra.
+Antes de continuar, puede ser necesario instalar algunos paquetes de LaTeX desde MiKTeX. Para hacerlo, debemos abrir la consola de MiKTeX.
 
-  Before we proceed, it may be necessary to install some LaTeX packages from MiKTeX. To do this, we need to open the MiKTeX console.
-
-  * Go to Packages and install "preview" and "mathtools" as below:
+  * Ve a Packages e instala "preview" y "mathtools" como se muestra a continuación:
   
    ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Miktex.png)
 
-   * You should type the names of the packages in the selected part.
-   * Now install:
+   * Debes escribir los nombres de los paquetes en la parte seleccionada.
+   * Ahora instala como se muestra a continuación:
 
  ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Preview.png)
 
- Once both packages are installed, proceed with the installation, remember that in the future compiling one of your projects may require a package that you may have to install from this console.
+ Una vez que ambos paquetes estén instalados, continúa con la instalación. Recuerda que en el futuro, al compilar uno de tus proyectos, puede que se requiera un paquete que tendrás que instalar desde esta consola.
 
-Also, it may be recommended to enable automatic package installation: Go to Setting
+Además, puede ser recomendable habilitar la instalación automática de paquetes: Ve a Setting
 
  ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Conf.png)
 
-Now i'm using that Repository, its working good for me so you can try to use it going to change and selecting it, but if one day you have problems with the repository you can change it, i had problems using the default repository (SSL issue code), thats why i change mine.  
+Ahora estoy usando ese Repositorio, me está funcionando bien, así que puedes intentar usarlo entrando en change y seleccionándolo. Pero si algún día tienes problemas con el repositorio, puedes cambiarlo. Yo tuve problemas usando el repositorio por defecto (error de código SSL), por eso cambié el mío a ese, sin embargo si al momento de seguir la guía ya no se encuentra disponible, eres libre de probar cualquiera y ver cómo te va. 
 </details>
-
-
 
 <details>
   <summary style="font-size: 2.5em; font-weight: bold;">Sublime Configs</summary>
   
-- Open the Command Palette : Press `Ctrl+Shift+P`
+- Abre la **Command Palette** : Presiona `Ctrl+Shift+P`  
 
-- Type ‘install’ in the Command Palette input box, which should autocomplete to ‘Install Package Control.’ Press Enter to select it.
+- Escribe `install` en el cuadro de entrada de la Command Palette, el cual debería autocompletar a `Install Package Control.` Presiona **Enter** para seleccionarlo.  
 
-- Sublime Text 3 will start installing Package Control. This may take a short while. Once installed, a pop-up will display the message: Package Control was successfully installed.
+- **Sublime Text 3** empezará a instalar **Package Control**. Esto puede tardar un momento. Una vez instalado, aparecerá un mensaje emergente: *Package Control was successfully installed.*  
 
-- Go to `Preferences  → Package Settings  →  Package Control  → Settings` and paste the following
+
+- Ve a `Preferences  → Package Settings  →  Package Control  → Settings` y pega lo siguiente
 
   ```json
   {
@@ -109,9 +106,10 @@ Now i'm using that Repository, its working good for me so you can try to use it 
   }
   ```
 
-- Save the file. This will automatically install all the packages necessary for the setup.  Wait for 5-10 mins for the installation to complete (be sure the installation complete).
+- Guarda el archivo. Esto instalará automáticamente todos los paquetes necesarios para la configuración. Espera de 5 a 10 minutos para que la instalación se complete (asegúrate de que la instalación finalice).  
 
-- Next open `Preferences  → Settings`  and paste the following there.
+- Luego abre `Preferences  → Settings` y pega lo siguiente allí.  
+
 
   ```json
   {
@@ -163,7 +161,7 @@ Now i'm using that Repository, its working good for me so you can try to use it 
   ]
   ```
 
-- Now finally go to `Preferences→Package settings→Latex tools→Check system` to check whether everything is fine or not.
+- Finalmente, ve a `Preferences→Package settings→Latex tools→Check system` para comprobar si todo está bien o no.  
   
 </details>
 
@@ -172,7 +170,8 @@ Now i'm using that Repository, its working good for me so you can try to use it 
 <details>
   <summary style="font-size: 2.5em; font-weight: bold;">Dark Mode</summary>
   
-In Sumatra PDF go to `Settings→Advanced Options`. The settings will open in a new text document. Change the `MainWindowBackground = #11141b` and replace the code in `FixedPageUI` with the following
+En **Sumatra PDF** ve a `Settings→Advanced Options`. La configuración se abrirá en un nuevo documento de texto. Cambia `MainWindowBackground = #11141b` y reemplaza el código en `FixedPageUI` con lo siguiente  
+
 
 ```
 FixedPageUI [
@@ -189,7 +188,8 @@ FixedPageUI [
 ]
 ```
 
-This will activate dark mode in Sumatra. To revert back to light mode just un-comment the lines under `Light Mode` and comment the lines under `Dark Mode`.
+Esto activará el modo oscuro en Sumatra. Para volver al modo claro, simplemente descomenta las líneas bajo `Light Mode` y comenta las líneas bajo `Dark Mode`.  
+
 
 ```
 FixedPageUI [
@@ -206,65 +206,69 @@ FixedPageUI [
 ]
 ```
 
- Noticed that by changing the Backgroundcolor and MainWindowBackground lines in the Sumatra configuration, we can make our PDF appear in any color we want. If we want to customize Sumatra to match the colors of our Sublime theme, we just need to know the Hex code of the color associated with the theme (i.e. the background color of Sublime). To do this, we can take a screenshot of an area of the screen where the color we want to use is visible, save the image, and use a tool that detects the color in the image ([You can use this](https://imagecolorpicker.com/)).
+Observa que cambiando las líneas `Backgroundcolor` y `MainWindowBackground` en la configuración de Sumatra, podemos hacer que nuestro PDF aparezca en cualquier color que queramos.
 
-The color i'm using is for Ayu-Dark.
+Si queremos personalizar Sumatra para que coincida con los colores de nuestro tema de Sublime, solo necesitamos conocer el código Hex del color asociado con el tema (es decir, el color de fondo de Sublime).  
+
+Para hacerlo, podemos tomar una captura de pantalla de un área de la pantalla donde sea visible el color que queremos usar, guardar la imagen y usar una herramienta que detecte el color en la imagen ([Puedes usar esta](https://imagecolorpicker.com/)).  
   
 </details>
 
 
-# Build
-
+# Compilado
 
 <details>
-  <summary style="font-size: 2.5em; font-weight: bold;">Build</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Compilado</summary>
   
-To build your LaTeX project, press `Ctrl+Shift+B` and select PDFLaTeX or LuaLaTeX or XeLaTeX depending on which compiler your project requires.
+Para compilar tu proyecto en LaTeX, presiona `Ctrl+Shift+B` y selecciona **PDFLaTeX**, **LuaLaTeX** o **XeLaTeX** dependiendo de cuál compilador requiera tu proyecto.  
 
- ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Compilers.png)
+ ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Compilers.png) 
 
- If you don't use those you can maybe have problems with biblatex.
+Después de la primera compilación, deberías poder compilar simplemente usando `Ctrl+B`. Siempre que requieras cambiar de compilador lo haces nuevamente con  `Ctrl+Shift+B`.
 
-After the first compilation, you should be able to compile simply by using `Ctrl+B`
-
-To compile the project, you need to do it from the main file of the project (for example, main.tex). However, if you want to work on a large project with different .tex files and you don't want to switch to main.tex every time you compile, you can add the following line of code to the file from which you want to compile
+Para compilar el proyecto, debes hacerlo desde el archivo principal del proyecto (por ejemplo, `main.tex`). Sin embargo, si deseas trabajar en un proyecto grande con diferentes archivos `.tex` y no quieres cambiar a `main.tex` cada vez que compilas, puedes agregar la siguiente línea de código al archivo desde el cual deseas compilar:
 
 ```
 %!TEX root = main.tex
 ```
 
-For example: This project
+Por ejemplo: Este proyecto  
 
 ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Project.png)
 
-If you're working on the 2.5.tex file and want to compile the entire project from there, you need to add %!TEX root = main.tex to the first line, as shown below:
+Si estás trabajando en el archivo `2.5.tex` y quieres compilar todo el proyecto desde allí, necesitas agregar `%!TEX root = main.tex` en la primera línea, como se muestra a continuación:  
 
 ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Example.png)
 
-The first line of code doesn't affect our project as it is a comment. What it does is tell LatexTools to compile the main.tex file instead of the 2.5.tex file. If your main file isn't named main, you can edit the line of code with the name of your file.  
+La primera línea de código no afecta nuestro proyecto ya que es un comentario. Lo que hace es indicarle a **LatexTools** que compile el archivo `main.tex` en lugar del archivo `2.5.tex`. Si tu archivo principal no se llama `main`, puedes editar la línea de código con el nombre de tu archivo. Y si tienes el archivo desde el que quieres compilar dentro de una carpeta puedes indicarle a LaTeX que salga de esa carpeta añadiendo el comando "../", sería algo como
+
+```
+%!TEX root = ../main.tex
+```
+
 </details>
 
 
 
-
 <details>
-  <summary style="font-size: 2.5em; font-weight: bold;">Some issues</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Posibles errores</summary>
   
-When you start using the interface, you'll notice that when you compile a document, a new Sublime Text window opens. This can be quite annoying, and there may be errors such as auto-completion failures and deleted characters. Here, we will provide solutions to these issues.
+Cuando empieces a usar la interfaz, notarás que al compilar un documento se abre una nueva ventana de **Sublime Text**. Esto puede ser bastante molesto y pueden aparecer errores como fallos en el autocompletado o caracteres eliminados. Aquí daremos soluciones a estos problemas.  
 
-* Go to `Preferences -> Package Settings -> LaTeXTools-> Settings-User` and in the line:
+* Ve a `Preferences -> Package Settings -> LaTeXTools-> Settings-User` y en la línea:  
 
 ```json
 "keep_focus": true
 ```
-Change true for false and that will fix the first issue.
 
-Now for auto-completion failures:
+Cambia true por false y eso solucionará el primer problema.
 
-* Press `Ctrl+Shift+P` and write `Browse Packages`.
+Ahora, para los fallos de autocompletado:
 
-* Open LaTeXTools/latex_cwl_completion.py
-* Delete or comment out lines 308–312
+* Presiona `Ctrl+Shift+P` y busca `Browse Packages`.
+
+* Abre LaTeXTools/latex_cwl_completion.py
+* Borra o comenta las lineas de 308–312
 
 ```python
 if is_prefixed:
@@ -274,22 +278,31 @@ if is_prefixed:
     ]
 ```
 
-Deleting or commenting out these lines of code will solve all the problems.
+Esto soluciona los problemas
 
 ## Biblatex:
 
-There is an issue that occurs when using biblatex and not making any citation in the entire document, basically it does not print the bibliography and the "\nocite{*}" command does not work. Once we make at least one citation in the entire document, the "\nocite{ * }" command works and the problem is fixed. However, if we do not want to make any citation in the entire document, a quick solution for this is to make a phantom citation, that is, one that does not affect the final document but solves the problem. To do this, we implement the following in our .tex file:
+Hay un problema que ocurre al usar **biblatex** y no hacer ninguna cita en todo el documento: básicamente no imprime la bibliografía y el comando `\nocite{*}` no funciona a menos que hagamos una cita en el documento, esto no es como tal un problema, de cierto modo, ¿para qué tener citas si no vamos a citar nunca?, sin embargo, voy a ofrecer una solución.
+
+Como mencioné, una vez que hacemos al menos una cita en todo el documento, el comando `\nocite{*}` funciona y el problema se soluciona.  
+
+Sin embargo, si no queremos hacer ninguna cita en todo el documento, una solución rápida es hacer una **cita fantasma**, es decir, una que no afecte el documento final pero resuelva el problema.  
+
+Para hacerlo, implementamos lo siguiente en nuestro archivo `.tex` (si quieres xd o hazlo manual):  
+
 
 ```tex
 \newcommand{\phantomcite}[1]{
-    \phantom{\cite{#1}}
+    \phantom{\cite{lo que quieras}}
     \nocite{*}
 }
 ```
+Entonces, al final de nuestro documento, antes de usar `\printbibliography`, ponemos el comando `\phantomcite{"aquí coloca cualquier cita de tus referencias"}` y eso resolverá el problema.  
 
-So at the end of our document, before using "\printbibliography", we put the command "\phantomcite{"here put any citation from your references"}" and that will solve the problem. This command executes a phantom citation and is followed by the "\nocite{*}" command, so it will no longer be necessary to use it.
+Este comando ejecuta una cita fantasma y va seguido del comando `\nocite{*}`, por lo que ya no será necesario usarlo.  
 
-* Example:
+
+* Ejemplo:
   
 ```tex
 \documentclass{article}
@@ -314,7 +327,7 @@ Test.
 \end{document}
 ```
 
-Another way to fix the problem is before using "\nocite{*}" put "nocite{"some of your reference"}":
+Otra forma de solucionarlo es antes de usar "\nocite{*}" pon "nocite{"alguna referencia"}":
 
 ```tex
 \documentclass{article}
@@ -334,33 +347,42 @@ Test.
 \end{document}
 ```
 
-As mentioned earlier, the problem is related to "\nocite{*}". In this solution, it is not necessary to add the "\phantomcite" from the previous solution.
+Como se mencionó anteriormente, el problema está relacionado con `\nocite{*}`.  
+En esta solución, no es necesario añadir el `\phantomcite` de la solución anterior.  
 
-* IMPORTANT: If you compile your project and it generates the bibliography and you make changes to it, you may need to delete the generated files and compile again. Otherwise, the bibliography may not change. The corresponding file is the one with the extension .bbl in our files folder.
+* **IMPORTANTE:** Si compilas tu proyecto y este genera la bibliografía, y luego haces cambios en ella, puede que necesites eliminar los archivos generados y volver a compilar. De lo contrario, la bibliografía puede no actualizarse.
 
+El archivo correspondiente es el que tiene la extensión **.bbl** en la carpeta de tus archivos. Esto no suele ocurrir frecuentemente, cuando hice mi tesis simplemente compilaba una segunda vez y se arreglaba, creo que esto ocurre porque TeX prefiere no tener que compilar todo de nuevo y usa esos archivos residuales para acelerar el resultado, cuando hacemos cambios pequeños en el documento prefiere no hacer el compilado tan largo, pero no es más.
 
   
 </details>
 
 
 <details>
-  <summary style="font-size: 2.5em; font-weight: bold;">Spanish config</summary>
+  <summary style="font-size: 2.5em; font-weight: bold;">Español</summary>
   
-To add the Spanish language to Sublime Text and the spell checker, you need to download the "Language - Spanish" folder from the repository and put it in the folder that opens when you run "Browse Packages". Once the language folder is located there, go to Sublime Text `View -> Dictionary -> Language - Spanish -> Spanish`. When you select this, Sublime Text will implement Spanish language correction.
+Para añadir el idioma español a **Sublime Text** y al corrector ortográfico, necesitas descargar la carpeta **"Language - Spanish"** desde el repositorio y ponerla en la carpeta que se abre cuando ejecutas **"Browse Packages"**.  
+Una vez que la carpeta del idioma esté allí, ve en Sublime Text a `View -> Dictionary -> Language - Spanish -> Spanish`.  
+Cuando selecciones esto, Sublime Text implementará la corrección en idioma español.  
 
-The procedure is similar for autocorrection in English, however, you will need to search for the dictionaries as I do not have them available.
+El procedimiento es similar para la autocorrección en inglés, sin embargo, necesitarás buscar los diccionarios ya que no los tengo disponibles.  
+
 	
 </details>
 
-
-
 # ImageMagick Preview:
 
-With this project you will be able to see your equations without compile:
+Con este proyecto podrás ver tus ecuaciones sin compilar:  
 
-![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Previeww.png)
+![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Previeww.png)  
 
-If you see the resolution of the preview is too low go to: `Preferences -> Package Settings -> LaTeXTools-> Settings-User` and then search for the line "preview_math_density", you can change values and prove some resolutions and pixeles density if you want, this is my config for my screen (2160x1440p):
+Si ves que la resolución de la vista previa es muy baja, ve a:  
+`Preferences -> Package Settings -> LaTeXTools-> Settings-User`  
+y luego busca la línea `"preview_math_density"`.  
+
+Puedes cambiar valores y probar diferentes resoluciones y densidades de píxeles si lo deseas.  
+Esta es mi configuración para mi pantalla (2160x1440p):  
+
 
 ```json
 	// The density of the preview image. The higher the density the bigger the phantom.
@@ -376,11 +398,20 @@ If you see the resolution of the preview is too low go to: `Preferences -> Packa
 
 # Snippets
 
-The following work is inspired by that of Gilles Castel (casteldev), many of these snippets are adaptations and improvements of his wonderful work in LaTeX in Vim.
+El siguiente trabajo está inspirado en el de **Gilles Castel (casteldev)**, muchos de estos *snippets* son adaptaciones y mejoras de su maravilloso trabajo en LaTeX en Vim.  
 
-The purpose of this work is to save as much time as possible when working with LaTeX, but also to help those who are not very proficient in it, especially with libraries such as TikZ, PSTricks, etc. Over time, and especially with your help, I hope that these snippets will improve. All kinds of suggestions or collaborations are welcome.
+El propósito de esto es ahorrar la mayor cantidad de tiempo posible al trabajar con LaTeX, pero también ayudar a quienes no son muy expertos en él, especialmente con librerías como **TikZ**, **PSTricks**, etc.  
 
-To install these snippets, you need to download the "SublimeTeX" folder from the repository and paste it into the LatexTools folder that you can access from "Browse Packages", as we have been doing. After this, you are ready to use them, so I will leave some gifs of some of them so that you can appreciate their usefulness and how to use them, followed by a list of commands to use them. To use the snippets you have to write the snippet name and push tab.
+Con el tiempo, y especialmente con tu ayuda, espero que estos *snippets* mejoren. 
+
+Todo tipo de sugerencias o colaboraciones son bienvenidas.  
+
+Para instalar estos *snippets*, necesitas descargar la carpeta **"SublimeTeX"** desde el repositorio y pegarla en la carpeta **LatexTools** a la que puedes acceder desde **"Browse Packages"**, como lo hemos venido haciendo.  
+
+Después de esto, ya estarán listos para usarlos, así que dejaré algunos gifs de algunos de ellos para que puedas apreciar su utilidad y cómo usarlos, seguidos de una lista de comandos para utilizarlos.  
+
+Para usar los *snippets* solo tienes que escribir el nombre del *snippet* y presionar **tab**.  
+
 
 * plot: 
 
@@ -402,15 +433,19 @@ To install these snippets, you need to download the "SublimeTeX" folder from the
 
 ![](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/preview.gif)
 
-REMEMBER: TO USE THE SNIPPETS YOU JUST HAVE TO KNOW THEIR NAMES, WRITE THEM AND PUSH TAB.
+⚠ **RECUERDA️**: Para usar los snippets solo necesitas conocer sus nombres, escribirlos y presionar **Tab**.  
 
-There are a lot of snippets and i will upload more, here you will find a list with all their names in the file "snippets.md"
+Ya hay muchos snippets disponibles y seguiré subiendo más.  
+Puedes encontrar la lista completa de nombres en el archivo **`snippets.md`**.  
 
-What I recommend is to use all of them to understand well what they do, and then decide which ones are useful for you. If you can, please suggest some of them.
+Mi recomendación es que pruebes todos al menos una vez para entender bien qué hacen.  
 
-# Contact
+Después de eso, decide cuáles son más útiles para tu flujo de trabajo.  
 
-If you have any issues with the solutions presented here, feel free to ask me:
+Si puedes, por favor comparte tus sugerencias — siempre son bienvenidas nuevas ideas de snippets.  
+ 
+
+
+# Contacto
 
 * mmanosalva@unal.edu.co
-* matemano6@gmail.com
