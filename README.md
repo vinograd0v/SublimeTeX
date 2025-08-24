@@ -376,9 +376,7 @@ Con este proyecto podrás ver tus ecuaciones sin compilar:
 
 ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Previeww.png)  
 
-Si ves que la resolución de la vista previa es muy baja, ve a:  
-`Preferences -> Package Settings -> LaTeXTools-> Settings-User`  
-y luego busca la línea `"preview_math_density"`.  
+Si ves que la resolución de la vista previa es muy baja, ve a:  `Preferences -> Package Settings -> LaTeXTools-> Settings-User`  y luego busca la línea `"preview_math_density"`.  
 
 Puedes cambiar valores y probar diferentes resoluciones y densidades de píxeles si lo deseas.  
 Esta es mi configuración para mi pantalla (2160x1440p):  
