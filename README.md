@@ -222,8 +222,6 @@ Para hacerlo, podemos tomar una captura de pantalla de un área de la pantalla d
   
 Para compilar tu proyecto en LaTeX, presiona `Ctrl+Shift+B` y selecciona **PDFLaTeX**, **LuaLaTeX** o **XeLaTeX** dependiendo de cuál compilador requiera tu proyecto.  
 
- ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Compilers.png) 
-
 Después de la primera compilación, deberías poder compilar simplemente usando `Ctrl+B`. Siempre que requieras cambiar de compilador lo haces nuevamente con  `Ctrl+Shift+B`.
 
 Para compilar el proyecto, debes hacerlo desde el archivo principal del proyecto (por ejemplo, `main.tex`). Sin embargo, si deseas trabajar en un proyecto grande con diferentes archivos `.tex` y no quieres cambiar a `main.tex` cada vez que compilas, puedes agregar la siguiente línea de código al archivo desde el cual deseas compilar:
