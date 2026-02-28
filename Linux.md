@@ -8,16 +8,28 @@ Primero instalamos TexLive.
 sudo pacman -S texlive
 ```
 
-Ahora instalamos SublimeText, yo lo haré desde los repositorios AUR, en tu caso intalalo como gustes.
+Ahora instalamos SublimeText, esto, nuevamente es para Archlinux, en la página de SublimeTex probablemente encuentres cómo instalarlo en tu distro.
 
 ```
-yay -S sublime-text-3
+curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 ```
 
-Ahora necesitamos instalar zathura.
+```
+echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
+```
 
 ```
-sudo pacman -S zathura zathura-djvu zathura-pdf-poppler
+sudo pacman -Syu sublime-text
+```
+
+Ahora necesitamos instalar zathura, biber, etc.
+
+```
+sudo pacman -S zathura zathura-djvu zathura-pdf-poppler biber texlive-langspanish python-dbus
 ```
 
 Una vez hecho esto abrimos SubliText y continuamos con la configuración desde la parte "Sublime Configs"
+
+## Resultado final
+
+![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/image.png)
