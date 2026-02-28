@@ -17,7 +17,6 @@ Finalmente, en este repositorio encuentras snippets, piezas de código que permi
 Para la guía de instalación en linux abre Linux.md
 
  # Resultado
-
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
 ## Snippets:
 
