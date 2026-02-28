@@ -14,6 +14,8 @@ En esta guía vamos a mostrar la forma de hacer esto con SublimeText (latextools
 
 Finalmente, en este repositorio encuentras snippets, piezas de código que permiten decirle a Sublime qué queremos que haga cuando escribimos un comando particular en nuestro documento, por ejemplo, si quiero hacer una matriz de 8x8, sería muy extenso tener que hacerlo a mano, en cambio, estos snippets nos permiten ahorrar mucho tiempo de escritura ya que hacen esto de forma automática, a lo largo de la guía hay varios ejemplos de su uso y en la carpeta SublimeTeX se encuentran todos ellos y son totalmente configurables a tu gusto.
 
+Para la guía de instalación en linux abre Linux.md
+
  # Resultado
 
   ![Alt text](https://github.com/mmanosalva/SublimeTeX/blob/main/Images/Workstation.png)
